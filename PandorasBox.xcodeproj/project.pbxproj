@@ -11,6 +11,7 @@
 		719982331D91BEE7001B4C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719982321D91BEE7001B4C92 /* Assets.xcassets */; };
 		719982361D91BEE7001B4C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719982341D91BEE7001B4C92 /* LaunchScreen.storyboard */; };
 		7199823F1D91D3FA001B4C92 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7199823E1D91D3FA001B4C92 /* MainTableViewController.swift */; };
+		71C2CB881D92F28300499CD8 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2CB871D92F28300499CD8 /* CalculatorViewController.swift */; };
 		71C2EE1A1D91D9EB00519916 /* Main.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2EE191D91D9EB00519916 /* Main.Storyboard */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		719982351D91BEE7001B4C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		719982371D91BEE7001B4C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7199823E1D91D3FA001B4C92 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableViewController.swift; path = ../MainTableViewController.swift; sourceTree = "<group>"; };
+		71C2CB871D92F28300499CD8 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		71C2EE191D91D9EB00519916 /* Main.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.Storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,8 +56,9 @@
 		7199822A1D91BEE7001B4C92 /* PandorasBox */ = {
 			isa = PBXGroup;
 			children = (
-				7199823E1D91D3FA001B4C92 /* MainTableViewController.swift */,
-				71C2EE191D91D9EB00519916 /* Main.Storyboard */,
+				71C2CB841D92DA2800499CD8 /* Models */,
+				71C2CB851D92DA3800499CD8 /* Views */,
+				71C2CB861D92DA4400499CD8 /* Controllers */,
 				7199823D1D91C0B5001B4C92 /* Supporting Files */,
 			);
 			path = PandorasBox;
@@ -70,6 +73,30 @@
 				719982371D91BEE7001B4C92 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71C2CB841D92DA2800499CD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		71C2CB851D92DA3800499CD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71C2EE191D91D9EB00519916 /* Main.Storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		71C2CB861D92DA4400499CD8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7199823E1D91D3FA001B4C92 /* MainTableViewController.swift */,
+				71C2CB871D92F28300499CD8 /* CalculatorViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7199823F1D91D3FA001B4C92 /* MainTableViewController.swift in Sources */,
+				71C2CB881D92F28300499CD8 /* CalculatorViewController.swift in Sources */,
 				7199822C1D91BEE7001B4C92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
