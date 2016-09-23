@@ -13,6 +13,7 @@ class MainTableViewController: UITableViewController {
     private struct StoryBoard{
         static let CELL_IDENTIFIER = "cell"
         static let CALCULATOR_VIEWCONTROLLER_IDENTIFIER = "CalculatorViewController"
+        static let STACKVIEW_VIEWCONTROLLER_IDENTIFIER = "StackViewController"
     }
     //Array of sections
     private let sections = [
@@ -30,7 +31,7 @@ class MainTableViewController: UITableViewController {
         ]
     
     private let Devslopes = [
-        ("AutoLayout","Some simple autoLayout exercise"),
+        ("StackView","Simple product detail page with stackview"),
         ("AutoLayout","Some simple autoLayout exercise"),
         ("AutoLayout","Some simple autoLayout exercise")
     ]
@@ -158,8 +159,10 @@ class MainTableViewController: UITableViewController {
         case "Devslopes":
             let (name,_) = Devslopes[indexPath.row]
             switch name {
-            case "someName":
-                //something
+            case "StackView":
+                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                let destination = storyboard.instantiateViewControllerWithIdentifier(StoryBoard.STACKVIEW_VIEWCONTROLLER_IDENTIFIER) as! StackViewController
+                navigationController?.pushViewController(destination, animated: true)
                 break
             default:
                 break
