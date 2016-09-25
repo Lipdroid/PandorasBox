@@ -287,34 +287,16 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hammer" translatesAutoresizingMaskIntoConstraints="NO" id="wCX-r8-uxh">
-                                <rect key="frame" x="374" y="392" width="256" height="165"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="256" id="ELw-FY-029"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="165" id="QiQ-cg-Lzf"/>
-                                    <constraint firstAttribute="height" constant="165" id="SrY-t3-KtJ"/>
-                                    <constraint firstAttribute="width" constant="240" id="Zmd-07-jId"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="cWm-IA-pNd"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="256" id="dVV-Lv-beb"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pTh-xf-Hb6"/>
-                                    <constraint firstAttribute="height" constant="128" id="pyZ-gq-SDp"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="QiQ-cg-Lzf"/>
-                                        <exclude reference="Zmd-07-jId"/>
-                                        <exclude reference="dVV-Lv-beb"/>
-                                        <exclude reference="pyZ-gq-SDp"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QY-f6-LHp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QY-f6-LHp" userLabel="attack">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="mGg-Hg-Aam"/>
                                     <constraint firstAttribute="height" constant="100" id="wTP-0k-t7M"/>
                                 </constraints>
                                 <state key="normal" image="attack"/>
+                                <connections>
+                                    <action selector="pressed_attack:" destination="eaE-pW-REn" eventType="touchUpInside" id="YTn-S4-d6Q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You got a harley hammer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfu-7h-FsL">
                                 <rect key="frame" x="158" y="20" width="285" height="29"/>
@@ -334,10 +316,22 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-Ye-201" userLabel="loot">
+                                <rect key="frame" x="444" y="399" width="136" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="aXw-zC-h8u"/>
+                                    <constraint firstAttribute="width" constant="136" id="n7A-jk-8XS"/>
+                                </constraints>
+                                <state key="normal" image="hat"/>
+                                <connections>
+                                    <action selector="loot_pressed:" destination="eaE-pW-REn" eventType="touchUpInside" id="8bF-zT-3Ib"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0Em-sP-ajI" firstAttribute="top" secondItem="cMm-BD-dHG" secondAttribute="bottom" id="0md-Z5-fhi"/>
+                            <constraint firstItem="tgG-Ye-201" firstAttribute="trailing" secondItem="jMo-2Y-EmG" secondAttribute="trailingMargin" id="4ax-N1-BUm"/>
                             <constraint firstItem="P2S-yJ-yIy" firstAttribute="top" secondItem="mIq-Cn-ha2" secondAttribute="bottom" constant="8" id="5GX-hj-fv4"/>
                             <constraint firstAttribute="bottomMargin" secondItem="H80-Pu-yNl" secondAttribute="bottom" constant="-15" id="E2z-Eh-Jgn"/>
                             <constraint firstItem="DU3-fz-EmA" firstAttribute="top" secondItem="oji-wJ-q3f" secondAttribute="bottom" constant="8" id="IcN-Mu-fbH"/>
@@ -348,17 +342,16 @@
                             <constraint firstItem="H80-Pu-yNl" firstAttribute="leading" secondItem="jMo-2Y-EmG" secondAttribute="leadingMargin" constant="-90" id="b2Y-HF-8mS"/>
                             <constraint firstItem="mIq-Cn-ha2" firstAttribute="leading" secondItem="jMo-2Y-EmG" secondAttribute="leading" constant="40" id="bBv-gq-OqF"/>
                             <constraint firstItem="cMm-BD-dHG" firstAttribute="top" secondItem="jMo-2Y-EmG" secondAttribute="top" id="bfr-jC-ix2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wCX-r8-uxh" secondAttribute="trailing" constant="-50" id="edg-25-nZz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DU3-fz-EmA" secondAttribute="trailing" constant="58" id="fIf-H9-iJA"/>
                             <constraint firstItem="0Em-sP-ajI" firstAttribute="top" secondItem="DU3-fz-EmA" secondAttribute="bottom" constant="53" id="hvO-aY-LsU"/>
                             <constraint firstAttribute="trailing" secondItem="cMm-BD-dHG" secondAttribute="trailing" id="jD2-bc-OQz"/>
                             <constraint firstItem="8QY-f6-LHp" firstAttribute="centerX" secondItem="jMo-2Y-EmG" secondAttribute="centerX" id="kEM-Sb-D4p"/>
                             <constraint firstItem="8QY-f6-LHp" firstAttribute="centerY" secondItem="jMo-2Y-EmG" secondAttribute="centerY" id="kJr-3P-fbI"/>
                             <constraint firstItem="8QY-f6-LHp" firstAttribute="centerY" secondItem="jMo-2Y-EmG" secondAttribute="centerY" id="o3m-O3-8cg"/>
-                            <constraint firstItem="0Em-sP-ajI" firstAttribute="top" secondItem="wCX-r8-uxh" secondAttribute="bottom" constant="43" id="om1-uO-p4E"/>
                             <constraint firstItem="vfu-7h-FsL" firstAttribute="top" secondItem="6u7-Qh-Sb1" secondAttribute="bottom" id="vSG-Cw-2Ve"/>
                             <constraint firstItem="8QY-f6-LHp" firstAttribute="centerX" secondItem="jMo-2Y-EmG" secondAttribute="centerX" id="x3u-qH-2GV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DU3-fz-EmA" secondAttribute="trailing" constant="-90" id="xVh-Mp-rn3"/>
+                            <constraint firstItem="0Em-sP-ajI" firstAttribute="top" secondItem="tgG-Ye-201" secondAttribute="bottom" constant="63" id="xdO-gw-bAH"/>
                             <constraint firstItem="0Em-sP-ajI" firstAttribute="top" secondItem="DU3-fz-EmA" secondAttribute="bottom" constant="53" id="z27-n4-Nz3"/>
                             <constraint firstItem="vfu-7h-FsL" firstAttribute="centerX" secondItem="jMo-2Y-EmG" secondAttribute="centerX" id="ztY-3Y-4G0"/>
                         </constraints>
@@ -371,6 +364,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="enemy_hp" destination="oji-wJ-q3f" id="usv-XM-187"/>
+                        <outlet property="enemy_image" destination="DU3-fz-EmA" id="7oJ-ig-oQt"/>
+                        <outlet property="info_lbl" destination="vfu-7h-FsL" id="hEG-lk-mOt"/>
+                        <outlet property="loot" destination="tgG-Ye-201" id="QUv-Ec-Cwq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqG-jC-nkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -465,7 +464,7 @@
         <image name="attack" width="600" height="600"/>
         <image name="batman" width="1024" height="768"/>
         <image name="bg" width="1772" height="800"/>
-        <image name="hammer" width="225" height="225"/>
+        <image name="hat" width="256" height="256"/>
         <image name="joker" width="1024" height="1655"/>
         <image name="main-shoe" width="600" height="300"/>
         <image name="platform" width="1000" height="250"/>

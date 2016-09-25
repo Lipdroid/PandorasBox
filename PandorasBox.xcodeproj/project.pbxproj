@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		71903C531D9823620029E028 /* BatmanAndEnimiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71903C521D9823620029E028 /* BatmanAndEnimiesViewController.swift */; };
+		71903C551D98436F0029E028 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71903C541D98436F0029E028 /* Character.swift */; };
+		71903C571D98454E0029E028 /* Batman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71903C561D98454E0029E028 /* Batman.swift */; };
+		71903C591D984A580029E028 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71903C581D984A580029E028 /* Enemy.swift */; };
 		7199822C1D91BEE7001B4C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7199822B1D91BEE7001B4C92 /* AppDelegate.swift */; };
 		719982331D91BEE7001B4C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719982321D91BEE7001B4C92 /* Assets.xcassets */; };
 		719982361D91BEE7001B4C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719982341D91BEE7001B4C92 /* LaunchScreen.storyboard */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		71903C521D9823620029E028 /* BatmanAndEnimiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatmanAndEnimiesViewController.swift; sourceTree = "<group>"; };
+		71903C541D98436F0029E028 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		71903C561D98454E0029E028 /* Batman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Batman.swift; sourceTree = "<group>"; };
+		71903C581D984A580029E028 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		719982281D91BEE7001B4C92 /* PandorasBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandorasBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7199822B1D91BEE7001B4C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719982321D91BEE7001B4C92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +88,9 @@
 		71C2CB841D92DA2800499CD8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				71903C541D98436F0029E028 /* Character.swift */,
+				71903C561D98454E0029E028 /* Batman.swift */,
+				71903C581D984A580029E028 /* Enemy.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -177,8 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7199823F1D91D3FA001B4C92 /* MainTableViewController.swift in Sources */,
+				71903C571D98454E0029E028 /* Batman.swift in Sources */,
 				74B51FE31D9542AD008773BE /* StackViewController.swift in Sources */,
 				71C2CB881D92F28300499CD8 /* CalculatorViewController.swift in Sources */,
+				71903C591D984A580029E028 /* Enemy.swift in Sources */,
+				71903C551D98436F0029E028 /* Character.swift in Sources */,
 				7199822C1D91BEE7001B4C92 /* AppDelegate.swift in Sources */,
 				71903C531D9823620029E028 /* BatmanAndEnimiesViewController.swift in Sources */,
 			);
