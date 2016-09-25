@@ -14,6 +14,7 @@ class MainTableViewController: UITableViewController {
         static let CELL_IDENTIFIER = "cell"
         static let CALCULATOR_VIEWCONTROLLER_IDENTIFIER = "CalculatorViewController"
         static let STACKVIEW_VIEWCONTROLLER_IDENTIFIER = "StackViewController"
+        static let BATMANANDENEMIES_VIEWCONTROLLER_IDENTIFIER = "BatmanAndEnimiesViewController"
     }
     //Array of sections
     private let sections = [
@@ -32,7 +33,7 @@ class MainTableViewController: UITableViewController {
     
     private let Devslopes = [
         ("StackView","Simple product detail page with stackview"),
-        ("AutoLayout","Some simple autoLayout exercise"),
+        ("Batman & Enemies","Simple example of classe"),
         ("AutoLayout","Some simple autoLayout exercise")
     ]
     
@@ -162,6 +163,11 @@ class MainTableViewController: UITableViewController {
             case "StackView":
                 let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
                 let destination = storyboard.instantiateViewControllerWithIdentifier(StoryBoard.STACKVIEW_VIEWCONTROLLER_IDENTIFIER) as! StackViewController
+                navigationController?.pushViewController(destination, animated: true)
+                break
+            case "Batman & Enemies":
+                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                let destination = storyboard.instantiateViewControllerWithIdentifier(StoryBoard.BATMANANDENEMIES_VIEWCONTROLLER_IDENTIFIER) as! BatmanAndEnimiesViewController
                 navigationController?.pushViewController(destination, animated: true)
                 break
             default:
