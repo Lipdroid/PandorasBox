@@ -33,6 +33,7 @@ class BatmanAndEnimiesViewController: UIViewController {
     }
     var enemy_char:Enemy?
     @IBOutlet weak var loot: UIButton!
+    
     private func generateCharacter(){
         let rand = Int(arc4random_uniform(UInt32(enemy.count)))
         enemy_char = nil

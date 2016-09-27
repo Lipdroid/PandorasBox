@@ -16,6 +16,12 @@ class CalculatorViewController: UIViewController {
         self.navigationItem.title = "CalCulator"
 
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated);
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
 
 }
