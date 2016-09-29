@@ -15,6 +15,11 @@ class MainTableViewController: UITableViewController {
         static let CALCULATOR_VIEWCONTROLLER_IDENTIFIER = "CalculatorViewController"
         static let STACKVIEW_VIEWCONTROLLER_IDENTIFIER = "StackViewController"
         static let BATMANANDENEMIES_VIEWCONTROLLER_IDENTIFIER = "BatmanAndEnimiesViewController"
+        static let SIZECLASSES_VIEWCONTROLLER_IDENTIFIER = "SizeClassesViewController"
+        static let TOKIYOWIKI_VIEWCONTROLLER_IDENTIFIER = "TokyoWikiViewController"
+        
+
+        
     }
     //Array of sections
     private let sections = [
@@ -34,7 +39,8 @@ class MainTableViewController: UITableViewController {
     private let Devslopes = [
         ("StackView","Simple product detail page with stackview"),
         ("Batman & Enemies","Simple example of classe"),
-        ("AutoLayout","Some simple autoLayout exercise")
+        ("Size Classes","Different View for potrait,landscape and IPAD"),
+        ("Tokiyo City","Short Description about tokiyo city")
     ]
     
     private let NewBoston = [
@@ -151,9 +157,10 @@ class MainTableViewController: UITableViewController {
             let (name,_) = Stanford[indexPath.row]
             switch name {
             case "Calculator":
-                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-                let destination = storyboard.instantiateViewControllerWithIdentifier(StoryBoard.CALCULATOR_VIEWCONTROLLER_IDENTIFIER) as! CalculatorViewController
-                navigationController?.pushViewController(destination, animated: true)
+//                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+//                let destination = storyboard.instantiateViewControllerWithIdentifier(StoryBoard.CALCULATOR_VIEWCONTROLLER_IDENTIFIER) as! CalculatorViewController
+//                navigationController?.pushViewController(destination, animated: true)
+                break
             default:
                 break
             }
@@ -168,6 +175,18 @@ class MainTableViewController: UITableViewController {
             case "Batman & Enemies":
                 let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
                 let destination = storyboard.instantiateViewControllerWithIdentifier(StoryBoard.BATMANANDENEMIES_VIEWCONTROLLER_IDENTIFIER) as! BatmanAndEnimiesViewController
+                navigationController?.pushViewController(destination, animated: true)
+                break
+                
+            case "Size Classes":
+                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                let destination = storyboard.instantiateViewControllerWithIdentifier(StoryBoard.SIZECLASSES_VIEWCONTROLLER_IDENTIFIER) as! SizeClassesViewController
+                navigationController?.pushViewController(destination, animated: true)
+                break
+                
+            case "Tokiyo City":
+                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                let destination = storyboard.instantiateViewControllerWithIdentifier(StoryBoard.TOKIYOWIKI_VIEWCONTROLLER_IDENTIFIER) as! TokyoWikiViewController
                 navigationController?.pushViewController(destination, animated: true)
                 break
             default:

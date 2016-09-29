@@ -12,7 +12,7 @@ class StackViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.hidden = false
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor();
         self.navigationItem.title = "Product Details"    }
 

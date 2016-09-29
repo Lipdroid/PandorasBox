@@ -15,15 +15,26 @@ class BatmanAndEnimiesViewController: UIViewController {
     @IBOutlet weak var info_lbl: UILabel!
     @IBOutlet weak var enemy_hp: UILabel!
     
+    @IBAction func back_pressed(sender: AnyObject) {
+        //go back for segues
+        //dismissViewControllerAnimated(true, completion: nil)
+        //go back for navigation root view
+        navigationController?.popToRootViewControllerAnimated(true)
+        //go back for previous view
+        //navigationController?.popViewControllerAnimated(true)
+    }
+    
     let batman = Batman(name: "Batman", hp: 100, power: 60)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor();
-        self.navigationItem.title = "Batman"
+//        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor();
+//        self.navigationItem.title = "Batman"
+        
+        self.navigationController?.navigationBar.hidden = true
         //make it landsscape
-        let value = UIInterfaceOrientation.LandscapeRight.rawValue
+        let value = UIInterfaceOrientation.LandscapeLeft.rawValue
         UIDevice.currentDevice().setValue(value, forKey: "orientation")
         
         

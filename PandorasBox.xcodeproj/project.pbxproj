@@ -17,6 +17,9 @@
 		7199823F1D91D3FA001B4C92 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7199823E1D91D3FA001B4C92 /* MainTableViewController.swift */; };
 		71C2CB881D92F28300499CD8 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2CB871D92F28300499CD8 /* CalculatorViewController.swift */; };
 		71C2EE1A1D91D9EB00519916 /* Main.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2EE191D91D9EB00519916 /* Main.Storyboard */; };
+		745F49AB1D9B819500E1302B /* SizeClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F49AA1D9B819500E1302B /* SizeClassesViewController.swift */; };
+		745F49AD1D9BD1B100E1302B /* TokyoWikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F49AC1D9BD1B100E1302B /* TokyoWikiViewController.swift */; };
+		745F49AF1D9BE15E00E1302B /* FujiyamaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F49AE1D9BE15E00E1302B /* FujiyamaViewController.swift */; };
 		74B51FE31D9542AD008773BE /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B51FE21D9542AD008773BE /* StackViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		7199823E1D91D3FA001B4C92 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableViewController.swift; path = ../MainTableViewController.swift; sourceTree = "<group>"; };
 		71C2CB871D92F28300499CD8 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		71C2EE191D91D9EB00519916 /* Main.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.Storyboard; sourceTree = "<group>"; };
+		745F49AA1D9B819500E1302B /* SizeClassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeClassesViewController.swift; sourceTree = "<group>"; };
+		745F49AC1D9BD1B100E1302B /* TokyoWikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokyoWikiViewController.swift; sourceTree = "<group>"; };
+		745F49AE1D9BE15E00E1302B /* FujiyamaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FujiyamaViewController.swift; sourceTree = "<group>"; };
 		74B51FE21D9542AD008773BE /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +116,9 @@
 				7199823E1D91D3FA001B4C92 /* MainTableViewController.swift */,
 				71C2CB871D92F28300499CD8 /* CalculatorViewController.swift */,
 				74B51FE21D9542AD008773BE /* StackViewController.swift */,
+				745F49AA1D9B819500E1302B /* SizeClassesViewController.swift */,
+				745F49AC1D9BD1B100E1302B /* TokyoWikiViewController.swift */,
+				745F49AE1D9BE15E00E1302B /* FujiyamaViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -190,6 +199,9 @@
 				74B51FE31D9542AD008773BE /* StackViewController.swift in Sources */,
 				71C2CB881D92F28300499CD8 /* CalculatorViewController.swift in Sources */,
 				71903C591D984A580029E028 /* Enemy.swift in Sources */,
+				745F49AF1D9BE15E00E1302B /* FujiyamaViewController.swift in Sources */,
+				745F49AD1D9BD1B100E1302B /* TokyoWikiViewController.swift in Sources */,
+				745F49AB1D9B819500E1302B /* SizeClassesViewController.swift in Sources */,
 				71903C551D98436F0029E028 /* Character.swift in Sources */,
 				7199822C1D91BEE7001B4C92 /* AppDelegate.swift in Sources */,
 				71903C531D9823620029E028 /* BatmanAndEnimiesViewController.swift in Sources */,
