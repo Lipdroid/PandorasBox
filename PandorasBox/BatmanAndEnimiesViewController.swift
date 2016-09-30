@@ -29,8 +29,8 @@ class BatmanAndEnimiesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor();
-//        self.navigationItem.title = "Batman"
+        //        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor();
+        //        self.navigationItem.title = "Batman"
         
         self.navigationController?.navigationBar.hidden = true
         //make it landsscape
@@ -52,7 +52,7 @@ class BatmanAndEnimiesViewController: UIViewController {
             
         case "joker":
             enemy_char = Enemy(name: "joker", hp: 70, power: 45)
-            
+            enemy_image.image = UIImage(named: "\(enemy_char!.name).png")
             info_lbl.text =  "(HA-HA-HA),i am the joker"
         case "harley":
             enemy_char = Enemy(name: "harley", hp: 50, power: 20)
@@ -72,24 +72,24 @@ class BatmanAndEnimiesViewController: UIViewController {
     @IBAction func pressed_attack(sender: AnyObject) {
         
         if(loot.hidden){
-        if let _ = enemy_char!.attackWorks(batman.power){
-            
-            info_lbl.text =  "OHH!!That hurts"
-            enemy_hp.text =   "\(enemy_char!.hp) HP"
-            
-            if (!(enemy_char?.isAlive)!){
-                info_lbl.text = "\(enemy_char!.name) is dead"
-                let loot_name = "\(enemy_char!.get_loot)"
-                enemy_hp.text = "You got a \(loot_name)"
+            if let _ = enemy_char!.attackWorks(batman.power){
                 
-                loot.setImage(UIImage(named: "\(loot_name).png"), forState: UIControlState.Normal)
+                info_lbl.text =  "OHH!!That hurts"
+                enemy_hp.text =   "\(enemy_char!.hp) HP"
                 
-                enemy_image.hidden = true
-                loot.hidden = false
+                if (!(enemy_char?.isAlive)!){
+                    info_lbl.text = "\(enemy_char!.name) is dead"
+                    let loot_name = "\(enemy_char!.get_loot)"
+                    enemy_hp.text = "You got a \(loot_name)"
+                    
+                    loot.setImage(UIImage(named: "\(loot_name).png"), forState: UIControlState.Normal)
+                    
+                    enemy_image.hidden = true
+                    loot.hidden = false
+                }
+                
+                
             }
-            
-            
-        }
         }
     }
     
